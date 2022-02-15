@@ -1,9 +1,10 @@
 # jupyterlab_apod
-
-[![Github Actions Status](https://github.com/tsungjung411/jupyterlab-apod/workflows/Build/badge.svg)](https://github.com/tsungjung411/jupyterlab-apod/actions/workflows/build.yml)
+> Source:
+> - [[jupyterlab] Extension Tutorial](https://jupyterlab.readthedocs.io/en/stable/extension/extension_tutorial.html)
+> Also See:
+> - [跟著官方手冊開發 JupyterLab Extension](https://qrtt1.medium.com/677ab218ea2f)
 
 Show an Astronomy Picture of the Day widget
-
 
 
 ## Requirements
