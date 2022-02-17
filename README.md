@@ -10,7 +10,8 @@ Show an Astronomy Picture of the Day widget
 1. 對初學者來說太難，此範例並不能作為剛接觸 jupyterlab extension 的開發者
 2. 首次在 Palette 按一次 「Random Astronomy Picture」， `widget.content.update();` 會連發 4 次 requests；
    <br>正常來說，按一次應該就請求 1 次 requests；
-   <br>結果：在測試期間容易發出太多次 request，而導致 url 短時時間被禁止存取
+   <br>結果：在測試期間容易發出太多次 request，而導致 url 短時間內被禁止存取
+   ![](https://i.imgur.com/4FJp0FH.png)
    ```json
    {
      "error": {
