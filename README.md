@@ -4,6 +4,25 @@
 
 Show an Astronomy Picture of the Day widget
 
+## 官方範例缺點
+1. 對初學者來說太難，並不能作為剛接觸 jupyterlab extension 的開發者
+2. 初次按一次， `widget.content.update();` 會連發 4 次 requests；
+   <br>正常來說，按一次應該就請求 1 次 requests；
+   <br>結果：在測試期間容易發出太多次 request，而導致 url 短時時間被禁止存取
+   ```json
+   {
+     "error": {
+       "code": "OVER_RATE_LIMIT",
+       "message": "You have exceeded your rate limit. Try again later or contact us at https://api.nasa.gov:443/contact/ for assistance"
+     }
+   }
+   ```
+3. 官方並無介紹 url response 有哪些情況
+   - media_type 有分 image (.jpg, .gif) 和 video (youtube link) 
+   - 當 url 被禁用時，error 訊息的格式是如何？
+4. `APODResponse` 的宣告是多餘的
+
+<br>
 
 ## Requirements
 
